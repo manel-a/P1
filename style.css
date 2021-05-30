@@ -1,0 +1,580 @@
+@font-face {
+	font-family: 'robotoregular';
+	src: url('fonts/roboto_regular/Roboto-Regular-webfont.eot');
+	src: url('fonts/roboto_regular/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/roboto_regular/Roboto-Regular-webfont.woff2') format('woff2'), url('fonts/roboto_regular/Roboto-Regular-webfont.woff') format('woff'), url('fonts/roboto_regular/Roboto-Regular-webfont.ttf') format('truetype'), url('fonts/roboto_regular/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'robotoblack';
+	src: url('fonts/roboto_black/Roboto-Black-webfont.eot');
+	src: url('fonts/roboto_black/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/roboto_black/Roboto-Black-webfont.woff2') format('woff2'), url('fonts/roboto_black/Roboto-Black-webfont.woff') format('woff'), url('fonts/roboto_black/Roboto-Black-webfont.ttf') format('truetype'), url('fonts/roboto_black/Roboto-Black-webfont.svg#robotoblack') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+	margin: auto;
+	padding: 0;
+	color: black;
+}
+
+html {
+	overflow-x: hidden;/*enlever scroll horizontal*/
+	scroll-behavior: smooth;/*enlever scroll*/
+}
+
+header
+/*aligner le menu avec logo*/
+
+	{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	position: fixed;
+	width: 100%;
+	background: white;
+	height: 79px;
+	z-index: 9999;
+	margin: 0;
+}
+
+#logo a
+{
+	cursor: pointer;
+}
+
+section {
+	padding-top: 80px;
+}
+
+/* menu*/
+nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+}
+
+nav li {
+	height: 5em;
+	display: flex;
+	border-top: 3px solid transparent;
+}
+
+nav a {
+	font-size: 15px;
+	color: #181818;
+	text-decoration: none;
+	font-family: "robotoregular", "arial", "sans-serif";
+	padding: 20px;
+}
+
+.item_active {
+	border-top: 3px solid #54b4cc;
+}
+
+#chk, .menu-btn
+{
+	display: none;
+}
+
+section#Accueil {
+	position: relative;
+}
+
+.image-accueil img {
+	width: 100%;
+}
+
+#message {
+	position: absolute;
+	top: 31%;
+	left: 96px;
+	justify-content: center;
+}
+
+.nom {
+	font-family: "robotoblack", "arial", "sans-serif";
+	color: #ffffff;
+	font-size: 30px;
+}
+
+.bleu {
+	color: #54b4cc;
+}
+
+.msg {
+	font-family: "robotoregular", "arial", "sans-serif";
+	margin-top: 12.8px;
+	color: #ffffff;
+	font-size: 12.8px;
+	display: flex;
+	position: absolute;
+	top: 90px;
+}
+
+.bouton_bleu {
+	position: absolute;
+	top: 140px;
+	border-radius: 3px;
+	background-color: #54b4cc;
+	color: white;
+	text-align: center;
+	width: 7.4em;
+	height: 2.7em;
+	text-decoration: none;
+	box-shadow: 0px 4px 0px #468cad;
+	font-family: "robotoblack", "Arial", "Helvetica";
+	padding: 10px;
+}
+
+.fleche .fa {
+	position: absolute;
+	top: 39%;
+	font-size: 20px;
+	color: white;
+	display: block;
+	left: 30px;
+}
+
+.rond {
+	width: 55px;
+	height: 62px;
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-radius: 50% 50% 50% 50%;
+	position: absolute;
+	top: 50%;
+	background-color: rgba(0, 0, 0, 0.315);
+	cursor: pointer;
+	transition: background-color 1.3s;
+}
+
+.rond-left {
+	left: -25px;
+}
+.rond-right {
+	right: -25px;
+}
+
+.rond:hover
+{
+	background-color: #54b4cc;
+}
+
+.flechee .fa {
+	right: 27px;
+	top: 36%;
+	position: absolute;
+	font-size: 20px;
+	color: white;
+}
+
+.progress-bar {
+	width: 200px;
+	height: 5px;
+	background-color: #54b4cc;
+	margin: 0;
+	bottom: 4px;
+	position: absolute;
+}
+
+/* NOS SERVICES*/
+
+.titre {
+	text-align: center;
+	font-size: 40px;
+	font-family: "robotoblack", "arial", "sans-serif";
+}
+
+hr {
+	width: 10%;
+	margin-top: 16px;
+	border: 1px solid rgba(209, 209, 209, 0.589);
+}
+
+section div.pastille1 {
+	border-radius: 50%;
+	background-color: #54b4cc;
+	border: 4px solid rgb(255, 255, 255);
+	width: 1.4em;
+	height: 1.4em;
+	margin-bottom: 8px;
+	margin-top: -12.8px;
+}
+
+#texte {
+	font-family: "robotoregular", "arial", "sans-serif";
+	color: rgb(90, 90, 90);
+	font-size: 14px;
+	line-height: 25px;
+	text-align: center;
+}
+
+.conteneur2 {
+	display: flex;
+	flex-direction: row;
+}
+
+.titre_service {
+	color: black;
+	font-size: 17px;
+	font-family: "robotoblack", "arial", "sans-serif";
+	margin: 0;
+}
+
+.conteneur_image
+{
+	width: 50%;
+	display: flex;
+	height: auto;
+}
+.img_service
+{
+	height: auto;
+	width: 100%;
+}
+
+.service_liste {
+	font-family: "robotoregular", "Arial", "Verdana";
+	list-style-type: none;
+	width: 50%;
+	margin-top: 50px;
+}
+
+p.taille {
+	font-size: 14px;
+	font-family: "robotoblack", "Arial", "Verdana";
+	color: rgb(90, 90, 90);
+	line-height: 25px;
+}
+
+.bloc_service
+{
+	margin-top: 20px;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+}
+
+/* Icones*/
+
+ul.service_liste .i_graphique .fa {
+	color: #54b4cc;
+	font-size: 25px;
+}
+
+
+
+.cercle {
+	width: 60px;
+	height: 60px;
+	border: 1px solid rgb(173, 173, 173);
+	border-radius: 30px;
+	background: transparent;
+	display: flex;
+	position: relative;
+	margin: 15px;
+}
+
+.petitcercle {
+	position: absolute;
+	left: 50px;
+	bottom: 20px;
+	width: 18px;
+	height: 18px;
+	border: 4px solid white;
+	border-top: 4px solid rgb(245, 245, 245);
+	border-right: 4px solid rgb(245, 245, 245);
+	border-bottom: 4px solid rgb(245, 245, 245);
+	border-left: 4px solid rgb(245, 245, 245);
+	border-radius: 50%;
+	background: #54b4cc;
+}
+
+/* NOS PROJETS*/
+
+section.color {
+	background-color: rgb(236, 236, 236);
+}
+
+.titre2 {
+	text-align: center;
+	font-size: 40px;
+	font-family: "robotoblack", "arial", "sans-serif";
+}
+
+section div.pastille2 {
+	border-radius: 5em;
+	background-color: #54b4cc;
+	border: 4px solid white;
+	width: 1.4em;
+	height: 1.4em;
+	margin-bottom: 8px;
+    margin-top: -12.8px;
+}
+
+.text_center2 {
+	text-align: center;
+	font-family: "robotoregular", "Arial", "Verdana";
+	color: rgb(90, 90, 90);
+	font-size: 14px;
+	line-height: 32px;
+}
+
+/* ----------------Début Filtre projet--------------- */
+.menu_projet/*conteneur parent*/
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.menu_projet .button {
+	background-color: #d3d3d3;
+	margin-right: -5px;
+	position: relative;
+	padding: 11px 16px 11px 16px;
+	text-align: center;
+	text-decoration: none;
+	font-family: "robotoblack", "Arial", "sans-serif", "Helvetica";
+	border-bottom: 5px solid transparent;
+	cursor: pointer;
+	border: 3px solid transparent;
+	text-decoration: none;
+	font-family: "robotoblack", "Arial", "Helvetica", "sans-serif";
+	color: #6C7075;
+}
+
+
+/* element actif du filtre */
+.menu_projet button.actif{
+	background-color:#54b4cc;
+	border-bottom: 3px solid  #4494bb;
+	border-left-color: #54b4cc;
+	border-top-color: #54b4cc;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	color: white;
+}
+
+.button:hover
+{
+	background-color: #54b4cc;
+	color: white;
+	border-bottom: 3px solid  #4494bb
+}
+
+.triangle_actif::after
+{
+	width: 0;
+	height: 0;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-top: 9px solid  #4494bb;
+	position: absolute;
+	display: block;
+	left: 37px;
+	top: 42px;
+	content: "";
+}
+
+button.triangle::after
+{
+	width: 0;
+	height: 0;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-top: 9px solid  #4494bb;
+	position: absolute;
+	display: block;
+	left: 37px;
+	top: 42px;
+	content: "";
+	display: none;
+}
+
+.triangle:hover::after
+{
+	display: block;
+}
+
+button.border
+{
+	border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/* ----------------Fin Filtre projet--------------- */
+
+
+.images {
+	width: 100%;
+    height: 100%;
+	display: block;
+}
+
+ul.conteneur li {
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	width: 22%;
+	margin-bottom: 32px;
+	position: relative;
+}
+
+ul.conteneur{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+ul.conteneur li div.bloc {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 53px;
+	background: #00000094;
+	width: 100%;
+	display: none;
+	color: white;
+}
+
+.titre_projet {
+	font-family: "robotoblack", "Arial", "Helvetica", "sans-serif";
+	font-size: 17.6px;
+	padding-left: 12px;
+	padding-top: 5px;
+	color: rgb(255, 255, 255);
+}
+
+.texte-projet {
+	font-family: "robotoregular", "Arial", "Verdana";
+	font-size: 15.52px;
+	padding-left: 10px;
+	color: rgb(255, 255, 255);
+}
+
+ul.conteneur li:hover div.bloc {
+	display: block;
+}
+
+.icone
+/*cercle oeil*/
+{
+	border-radius: 80px;
+	position: absolute;
+	background-color: #54b4cc;
+	border: 2px solid white;
+	top: -41%;
+	right: 32px;
+	width: 48px;
+	height: 48px;
+	padding-top: 13px; /*centrer oeil*/
+	padding-right: 16px;
+	padding-bottom: 16px;
+	padding-left: 13.6px;
+}
+
+.icone .far
+{
+	color: white;
+}
+
+/*MAP*/
+
+.map {
+	height: 500px;
+	width: 100%;
+	background: #ececec;
+	position: relative;
+}
+
+.fond_map {
+	background-color: rgba(70, 119, 255, 0.21);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.carte {
+	position: absolute;
+	border: 0;
+}
+
+form.formulaire {
+	top: 108px;
+    position: absolute;
+    z-index: 10;
+    width: 320px;
+    height: 458px;
+	background-color: rgba(239, 242, 243, 0.89);
+	right: 50px;
+}
+
+.titre_form {
+	font-size: 24px;
+	margin-left: 19.8px;
+	margin-bottom: 16px;
+	margin-top: 11.2px;
+	font-family: "robotoblack", "arial", "sans-serif";
+	letter-spacing: -1px;
+}
+
+.titre2_form {
+	margin-left: 24px;
+	font-size: 14px;
+	color: rgb(83, 83, 83);
+	font-family: "robotoblack", "arial", "sans-serif";
+}
+
+.adresse {
+	margin-left: 24px;
+	margin-bottom: 16px;
+	font-size: 14px;
+	font-family: "robotoregular", "Arial", "sans-serif", "Helvetica";
+}
+
+.styleform {
+	width: 273px;
+    height: 32px;
+	border: 1px solid rgb(197, 197, 197);
+	border-radius: 3px;
+	margin-bottom: 16px;
+	margin-left: 24px;
+	padding-left: 8px;
+	font-family: "robotoregular", "Arial", "sans-serif", "Helvetica";
+}
+
+.stylemessage {
+	width: 273px;
+	height: 128px;
+	border-radius: 3px;
+	padding-left: 8px;
+	border: 1px solid rgb(197, 197, 197);
+	margin-bottom: 16px;
+	margin-left: 24px;
+	padding-top: 5px;
+	font-family: "robotoregular", "Arial", "sans-serif", "Helvetica";
+}
+
+.formulaire input[type=submit] {
+	background-color:#54b4cc;
+	border: 1px solid #54b4cc;
+	border-bottom: 2px solid #4494bb;
+	border-radius: 3px;
+	width: 8em;
+	height: 2.5em;
+	color: white;
+	margin-left: 24px;
+	font-family: "robotoregular", "Arial", "sans-serif", "Helvetica";
+}
+
+iframe
+{
+	width: 100%;
+	 height: 100%;
+}

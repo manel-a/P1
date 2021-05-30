@@ -1,0 +1,231 @@
+@media (max-width: 1200px) {
+
+    #message {
+        left: 77px;
+    }
+
+    ul.conteneur li {
+        margin-bottom: 29px;
+    }
+
+    P.texte-projet {
+        font-size: 14.5px;
+    }
+
+    .icone {
+        right: 17px;
+    }
+}
+
+@media (max-width: 992px){
+#message {
+    left: 98px;
+    top: 35%;
+    width: 342px;
+}
+
+.msg
+{
+    display: none;
+}
+
+.bouton_bleu
+{
+    top: 160px;
+}
+
+ul.conteneur li {
+    width: 23%;
+    margin-bottom: 14px;
+}
+
+.texte-projet {
+    font-size: 14.5px;
+}
+
+.icone, .texte-projet
+{
+    display: none;
+}
+}
+
+
+@media screen and (max-width: 768px){
+
+#logo img {
+      width: 180px;
+      top: 10px;
+}
+
+.msg, .bouton_bleu, .progress-bar, .rond
+{
+    display: none;
+}
+
+.nom
+{
+    font-size: 24px;
+}
+
+#message
+{
+    top: 47%;
+    left: 30px;
+    width: 300px;
+}
+
+.conteneur2, .bloc_service
+{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.conteneur_image
+{
+    width: 100%;
+}
+
+.service_liste
+{
+    width: 100%;
+    margin: 0;
+}
+
+ul.conteneur li {
+    width: 42%;
+    margin-bottom: 45px;
+}
+.icone, .texte-projet
+{
+    display: block;
+}
+}
+
+@media screen and (max-width: 574px){
+
+    /*Accueil*/
+
+#logo {
+      margin-left: 2px;
+}
+
+.msg, .bouton_bleu, .progress-bar, .rond
+{
+    display: none;
+}
+
+.nom
+{
+    font-size: 19px;
+}
+
+#message
+{
+    top: 49%;
+    left: 10px;
+    width: 237px;
+}
+
+.menu-btn
+    {
+        display: block;
+        position: fixed;
+        cursor: pointer;
+        top: 18px;
+        right: 20px;
+        font-size: 40px;
+    }
+
+    #chk {
+        display: none;
+    }
+
+    nav.menu {
+        position: absolute;
+        top:79px;
+        right: 0;
+        height: 0; /* Pour cacher un element et faire une animation*/
+        overflow: hidden; /* Pour cacher un element et faire une animation*/
+        transition: height .4s ease; /* Pour faire une animation sur height*/
+    }
+
+    #chk:checked ~ nav.menu {
+        display: block;
+        height: 232px;
+    }
+
+    /* --------menu bleu------- */
+    nav ul
+    {
+        display: block;
+        width: 120px;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    nav ul li
+    {
+        display: block;
+        background-color: #1aa8dbb6;
+        width: 100%;
+        height: 58px;
+        border-top: 1px solid white;
+    }
+    nav ul li a
+    {
+        display: block;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /*Services*/
+.conteneur2, .bloc_service
+{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.conteneur_image
+{
+    width: 100%;
+}
+
+.service_liste
+{
+    width: 100%;
+    margin: 0;
+}
+
+  /*Projets*/
+
+
+ul.conteneur {
+    flex-direction: column;
+}
+
+ul.conteneur li {
+    width: 80%;
+}
+
+.icone, .texte-projet
+{
+    display: block;
+}
+
+  /*Contacts*/
+
+.map {
+    height: 542px;
+}
+
+form.formulaire {
+    position: relative;
+    top: -39px;
+    right: 0;
+    left: 0;
+}
+}
